@@ -1,0 +1,14 @@
+version: '3'
+
+networks:
+  serverclient-network:
+    external: true
+
+services:
+  client:
+    build: .
+    container_name: client
+    environment:
+      host: server
+    networks:
+      - serverclient-network
