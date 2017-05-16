@@ -7,6 +7,5 @@ networks:
 services:
   server:
     build: .
-    container_name: server
     networks:
       - serverclient-network

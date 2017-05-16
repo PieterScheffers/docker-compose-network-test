@@ -7,7 +7,6 @@ networks:
 services:
   client:
     build: .
-    container_name: client
     environment:
       host: server
     networks:
